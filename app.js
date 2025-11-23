@@ -24,7 +24,7 @@ function nextImg(){
 function prevImg(){
     currentIndex -= 1
     currentImg.src = gallery[currentIndex]
-    if(currentIndex == 2){
+    if(currentIndex < gallery.length){
         nextButton.style.display = "inline"
     }
     if(currentIndex == 0){
